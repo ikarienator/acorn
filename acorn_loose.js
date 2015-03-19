@@ -698,7 +698,7 @@
     switch (this.tok.type) {
     case tt._this:
     case tt._super:
-      var type = this.tok.type === tt._this ? "ThisExpression" : "SuperExpression";
+      var type = this.tok.type === tt._this ? "ThisExpression" : "Super";
       var node = this.startNode();
       this.next();
       return this.finishNode(node, type);

@@ -2304,7 +2304,7 @@
     switch (this.type) {
     case tt._this:
     case tt._super:
-      var type = this.type === tt._this ? "ThisExpression" : "SuperExpression";
+      var type = this.type === tt._this ? "ThisExpression" : "Super";
       var node = this.startNode();
       this.next();
       return this.finishNode(node, type);
